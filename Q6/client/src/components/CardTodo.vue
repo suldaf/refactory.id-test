@@ -7,10 +7,24 @@
           <i class="bi bi-check2"> Complete</i>
         </p>
       </div>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </p>
+      <div class="row">
+        <div class="col-10">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+        <div class="col-2 d-flex justify-content-end align-items-end">
+          <div class="row justify-content-end align-items-center">
+            <button class="col-5 btn p-0">
+              <i class="bi bi-pencil-fill"></i>
+            </button>
+            <button class="col-5 btn p-0">
+              <i class="bi bi-trash-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -27,5 +41,13 @@ export default {};
 .text-danger {
   background-color: #feeaeb;
   border-radius: 0.5rem;
+}
+.col-1 {
+  width: 5%;
+  height: 5%;
+}
+.bi-pencil-fill,
+.bi-trash-fill {
+  color: #525c77;
 }
 </style>

@@ -47,9 +47,9 @@
         </div>
       </div>
     </div>
-
+    <ModalForm />
     <!-- Modal -->
-    <div
+    <!-- <div
       class="modal fade"
       id="exampleModal"
       tabindex="-1"
@@ -109,7 +109,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -118,6 +118,7 @@ import Nav from "@/components/Nav.vue";
 import Info from "@/components/Info.vue";
 import Datepicker from "vuejs-datepicker";
 import CardTodo from "@/components/CardTodo.vue";
+import ModalForm from "@/components/ModalForm.vue";
 export default {
   name: "App",
   components: {
@@ -125,6 +126,7 @@ export default {
     Info,
     Datepicker,
     CardTodo,
+    ModalForm,
   },
   data() {
     return {
@@ -144,26 +146,29 @@ export default {
   border-radius: 1.25rem;
   background-color: #0542d0;
 }
+.rounded-circle {
+  width: 11% !important;
+}
 .line {
   border-right: 2px solid #eef3fd;
-  width: 5% !important;
+  width: 2% !important;
 }
 .vdp-datepicker__calendar {
   border-radius: 1.25rem;
-  border: none;
+  border: none !important;
 }
 .vdp-datepicker__calendar .cell.selected {
   border-radius: 50%;
-  background-color: #0542d0;
+  background-color: #0542d0 !important;
   color: #ffff;
 }
 .vdp-datepicker__calendar .cell.selected:hover {
-  background-color: #0542d0;
+  background-color: #0542d0 !important;
 }
 .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover,
 .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover,
 .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {
-  border: 1px solid #0542d0;
+  border: 1px solid #0542d0 !important;
   border-radius: 50%;
 }
 </style>
